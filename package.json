@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "build": "npx tsc",
+    "postbuild": "find -E . -regex '^.*.(html|css)' -exec cp {} build/{} \\; -maxdepth 1"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  }
+}
